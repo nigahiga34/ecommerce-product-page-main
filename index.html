@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <header>
+    <nav>
+        <div class="logo"><h1>Sneakers</h1></div>
+        <ul class="nav-links">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="user-cart">
+            <img src="images/icon-cart.svg" alt="Cart">
+            <img src="images/image-avatar.png" alt="User" class="avatar">
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="images/image-product-1.jpg" alt="Fall Limited Edition Sneakers">
+            <div class="thumbnail-images">
+                <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1">
+                <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2">
+                <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3">
+                <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox hidden">
+          <span class="close">&times;</span>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="sneaker-large-1.jpg" alt="Enlarged Image">
+              <div class="lightbox-thumbnails">
+                  <img src="images/" alt="Thumbnail 1" class="thumbnail">
+                  <img src="images/image-product-2.jpg" alt="Thumbnail 2" class="thumbnail">
+                  <img src="images/image-product-3.jpg" alt="Thumbnail 3" class="thumbnail">
+                  <img src="images/image-product-4.jpg" alt="Thumbnail 4" class="thumbnail">
+              </div>
+          </div>
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+      </div>
+        <div class="product-details">
+            <h2>SNEAKER COMPANY</h2>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="price">
+                <span class="current-price">$125.00</span>
+                <span class="discount">50%</span>
+                <span class="original-price">$250.00</span>
+            </div>
+            <div class="add-to-cart">
+                <div class="quantity-selector">
+                    <button class="decrement"><img src="images/icon-minus.svg " alt=""></button>
+                    <input type="text" value="0" readonly>
+                    <button class="increment"><img src="images/icon-plus.svg" alt=""></button>
+                </div>
+               <a href=""><button class="cart-button"><img src="images/icon-cart.svg" alt="" class="qwertyuio">Add to cart</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
